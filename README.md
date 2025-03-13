@@ -4,7 +4,7 @@ Este proyecto te permite configurar tu entorno de **Neovim** con **NvChad** en u
 
 ## Requisitos
 
-- **Docker** instalado en tu sistema.[Docker](https://docs.docker.com/get-docker/).
+- **Docker** instalado en tu sistema. [Instalr](https://docs.docker.com/get-docker/).
 - **Neovim** y **NvChad** instalados en la PC.
 
 ## Pasos para instalarlo en tu nueva PC
