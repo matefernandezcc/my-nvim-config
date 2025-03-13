@@ -36,4 +36,3 @@ vim.schedule(function()
   require "mappings"
   require("nvim-tree.api").tree.open()
 end)
-
