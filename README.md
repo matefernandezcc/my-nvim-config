@@ -11,33 +11,23 @@ Este proyecto te permite configurar tu entorno de **Neovim** con **NvChad** en u
 
 ### 1. Clonar el repositorio y construir la imagen Docker
 
-Primero, clona este repositorio en tu nueva máquina (o simplemente copia los archivos de configuración que usas en tu PC original):
-
+Primero, clona este repositorio en tu nueva máquina
 ```bash
-git clone <url-del-repositorio>
-cd <directorio-clonado>
-Dentro del directorio donde tienes el archivo Dockerfile, construye la imagen de Docker que contiene tu configuración de NvChad:
+git clone git@github.com:matefernandezcc/my-nvim-config.git
+cd my-nvim-config
 ```
 
+Dentro del directorio donde esta el archivo Dockerfile, construi la imagen de Docker que contiene la configuración de NvChad:
 ```bash
 docker build -t nvchad-container .
-Este comando descargará las dependencias necesarias y configurará el contenedor con tu configuración de NvChad.
 ```
+Este comando descarga las dependencias necesarias y configura el contenedor.
 
 ### 2. Ejecutar el contenedor
-Una vez que la imagen esté construida, puedes ejecutar el contenedor para abrir Neovim con tu configuración personalizada:
+Una vez que la imagen esté construida, ejecuta el contenedor para abrir Neovim con tu configuración personalizada:
 
 ```bash
 docker run --rm -it nvchad-container
-Este comando abrirá Neovim dentro del contenedor Docker, y podrás utilizarlo con tu configuración de NvChad.
 ```
-
-### 3. (Opcional) Montar tu configuración desde tu máquina local
-Si prefieres que tu configuración de NvChad se mantenga sincronizada entre diferentes máquinas sin tener que reconstruir la imagen cada vez, puedes usar un volumen para montar tu carpeta de configuración de Neovim en el contenedor:
-
-```bash
-docker run --rm -it -v ~/.config/nvim:/root/.config/nvim nvchad-container
-Este comando hará que el contenedor use tu configuración de Neovim almacenada localmente en ~/.config/nvim de tu nueva PC.
-```
-
+Este comando abre Neovim dentro del contenedor Docker, y podes usarlo con la configuración de NvChad.
 
