@@ -1,6 +1,6 @@
 ![image](https://cdn.thenewstack.io/media/2025/03/53f8c39d-novim-1024x768.jpg)
 # Instalación de Nvim
-Este proyecto te permite configurar tu entorno de **Neovim** con **NvChad** en una nueva PC de manera automática usando Docker.
+Este proyecto te permite configurar tu entorno de **Neovim** con **NvChad** en una nueva PC.
 
 ## Requisitos
 
