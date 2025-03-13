@@ -5,6 +5,11 @@ Este proyecto te permite configurar tu entorno de **Neovim** con **NvChad** en u
 ## Requisitos
 
 - **Neovim** y **NvChad** instalados en la PC.
+[Página de NvChad](https://nvchad.com/docs/quickstart/install)
+Comando para instalarlo
+```bash
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+```
 
 ## Reemplazar la config de nvim local por la del repo
 ```bash
