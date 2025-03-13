@@ -3,10 +3,20 @@
 Este proyecto te permite configurar tu entorno de **Neovim** con **NvChad** en una nueva PC.
 
 ## Requisitos
+- [NvChad](https://nvchad.com/docs/quickstart/install) 0.10.
+- Nerd Font as your terminal font.
+  Make sure the nerd font you set doesn't end with Mono to prevent small icons.
+  Example : JetbrainsMono Nerd Font and not JetbrainsMono Nerd Font Mono
+- Ripgrep is required for grep searching with Telescope (OPTIONAL).
+- Delete old neovim folders (check commands below)
+```bash
+# Linux / MacOS (unix)
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
 
-- **Neovim** y **NvChad** instalados en la PC.
-[Página de NvChad](https://nvchad.com/docs/quickstart/install)
-Comando para instalarlo
+Comando para Instalar NvChad
 ```bash
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ```
